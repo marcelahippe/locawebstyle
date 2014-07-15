@@ -40,9 +40,6 @@ h1,h2,h3,h4,h5,h6,p
   min-height: calc(100% - 392px)
   height: calc(100% - 392px)
 
-  > .row > .col-md-9
-    padding-bottom: 50px
-
   .ls-screen-xs &
     height: auto
 
@@ -51,7 +48,8 @@ h1,h2,h3,h4,h5,h6,p
     display: block
     clear: both
 
-  > .row > .col-md-9 > p > a
+
+  > .col-md-9 > p > a
     color: #001e45
 
   section [class*="ls-alert"] a
@@ -174,14 +172,8 @@ p code
   margin-bottom: 0
 
 [class*="doc-title"]
-  margin-top: 35px
+  margin-top: 55px
   margin-bottom: 5px
-
-  a
-    color: #000
-
-    &:hover
-      opacity: .6
 
   .ls-box &
     margin-top: 0
@@ -306,38 +298,22 @@ p code
 .doc-social
   text-align: center
 
-.githubbtn
-  display: inline-block
-  vertical-align: middle
-
 .addthis_toolbox
   display: inline-block
   text-align: center
 
-  // a, iframe
-  //   vertical-align: middle
-  //   float: none !important
-  //   padding: 0
-  //   display: inline-block !important
-  //   margin-bottom: 15px
-
-  //   &.addthis_button_tweet
-  //     margin-bottom: 0
-
-  // a.addthis_button_tweet.at300b
-  //   width: 90px
-
-.addthis_native_toolbox
-  display: inline-block
-  vertical-align: middle
-  padding-right: 10px
-
-  iframe
-    width: 95px !important
-
-  a
+  a, iframe
+    vertical-align: middle
+    float: none !important
+    padding: 0
     display: inline-block !important
-    padding-right: 15px !important
+    margin-bottom: 15px
+
+    &.addthis_button_tweet
+      margin-bottom: 0
+
+  a.addthis_button_tweet.at300b
+    width: 90px
 
 //
 // SECTIONS OF HOME
@@ -714,4 +690,3 @@ p code
   .doc-highlight
     position: relative
     overflow: hidden
-
